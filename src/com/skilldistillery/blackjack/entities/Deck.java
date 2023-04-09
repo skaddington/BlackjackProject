@@ -19,9 +19,10 @@ public class Deck {
 		}
 	}
 	
-	public List<Card> getDeckOCards() {
-		return deckOCards;
-	}
+//		IF THE PLAYER WANTS TO KEEP PLAYING, DEALER ADDS ANOTHER DECK
+//	public List<Card> getDeckOCards() {
+//		return deckOCards;
+//	}
 
 	public int checkDeckSize() {
 		return deckOCards.size();
@@ -29,6 +30,13 @@ public class Deck {
 
 	public void shuffleDeck() {
 		Collections.shuffle(deckOCards);
+		System.out.println("Dealer has shuffled the deck");
+	}
+	
+	public void showShuffledDeck() {
+		for (Card card : deckOCards) {
+			System.out.println(card);
+		}
 	}
 	
 	public Card dealCard() {
