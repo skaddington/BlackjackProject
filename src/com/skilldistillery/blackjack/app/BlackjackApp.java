@@ -91,12 +91,15 @@ public class BlackjackApp {
 			System.out.println("Dealer wins this round!");
 			dealerWins++;
 		} else {
-			System.out.println("Stay or Hit : please enter 'S' or 'H' ");
+			System.out.println("Stay or Hit : Please enter 'S' or 'H' ");
 			String playersChoice = kb.nextLine();
 			if (playersChoice.equalsIgnoreCase("S")) {
 				playerStays();
 			} else if (playersChoice.equalsIgnoreCase("H")) {
 				playerHits();
+			} else {
+				System.out.println("Invalid entry : Try again");
+				playersNextStep();
 			}
 		}
 	}
