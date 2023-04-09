@@ -39,4 +39,3 @@
 - Loops : if, else if, else, foreach, while
 - Most Prominent BrainBlocks
 <br>- My biggest hangup was the dealInitialCards method. I originally placed it into the Dealer class but with help from the TA team and Denise, realized that the best place for it was in the BlackjackApp itself.
-<br>- 
